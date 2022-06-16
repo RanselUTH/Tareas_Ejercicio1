@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#D3BF0F"
+        android:backgroundTint="#F4DD0F"
+        android:text="Pantalla De Operación"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Numero 1:"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <EditText
+        android:id="@+id/txtnumero1"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="#2196F3"
+        android:backgroundTint="#2196F3"
+        android:ems="10"
+        android:hint="Numero..."
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Numero 2: "
+        android:textAlignment="center"
+        android:textColor="#151515"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnumero1"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <EditText
+        android:id="@+id/txtnumero2"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="#2196F3"
+        android:ems="10"
+        android:hint="Numero..."
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnumero1"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <Button
+        android:id="@+id/butresta"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="232dp"
+        android:backgroundTint="#E4D01D"
+        android:text="Resta"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnumero2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/butsuma"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#DCC81A"
+        android:text="Suma"
+        android:textColor="#0B0A0A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/butresta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnumero2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/butdivision"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#DFCC24"
+        android:text="División"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butresta"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <Button
+        android:id="@+id/butmulti"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#DFCC20"
+        android:text="Multiplicación"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butdivision"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
