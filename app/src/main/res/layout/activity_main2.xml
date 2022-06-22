@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8F5F5"
-    android:backgroundTint="#F8F5F5"
+    android:background="@drawable/fondo_verde"
     tools:context=".MainActivity2">
 
     <EditText
         android:id="@+id/txtResultado"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/borde"
         android:ems="10"
         android:inputType="textPersonName"
         android:textAlignment="center"
@@ -19,27 +19,10 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.392" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:background="#F3DE2D"
-        android:backgroundTint="#EAD521"
-        android:text="Resultado De La Operación"
-        android:textAlignment="center"
-        android:textColor="#0C0C0C"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.349" />
 
     <TextView
         android:id="@+id/textView5"
@@ -47,12 +30,40 @@
         android:layout_height="wrap_content"
         android:text="Resultado"
         android:textAlignment="center"
-        android:textColor="#070707"
+        android:textColor="#F8F5F5"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtResultado"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#EAD521"
+        android:text="Resultado De La Operación"
+        android:textAlignment="center"
+        android:textColor="#FDFAFA"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.368" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="310dp"
+        android:layout_height="175dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028"
+        app:srcCompat="@drawable/logoblancouth" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

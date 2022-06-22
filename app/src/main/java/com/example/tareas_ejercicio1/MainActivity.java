@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-
     EditText numero1, numero2;
     Button suma, resta, division, multi;
     @Override
@@ -19,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
         numero1 = (EditText) findViewById(R.id.txtnumero1);
         numero2 = (EditText) findViewById(R.id.txtnumero2);
-
         suma = (Button) findViewById(R.id.butsuma);
         resta = (Button) findViewById(R.id.butresta);
         division = (Button) findViewById(R.id.butdivision);
@@ -80,6 +78,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
     }
